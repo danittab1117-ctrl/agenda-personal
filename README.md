@@ -2,51 +2,73 @@
 
 ## 1. Descripción del proyecto
 
-Agenda Personal de Contactos es una aplicación web desarrollada en PHP y MySQL que permite a los usuarios registrarse, iniciar sesión y administrar sus contactos personales.
+La Agenda Personal de Contactos es una aplicación web desarrollada en PHP y MySQL que permite a los usuarios registrar, iniciar sesión y administrar sus contactos personales de manera organizada y segura.
 
-El sistema permite agregar, visualizar, editar y eliminar contactos. Además, implementa mecanismos de autenticación, manejo de sesiones y medidas de seguridad para garantizar que cada usuario pueda acceder únicamente a su propia información.
+Cada usuario puede acceder únicamente a sus propios contactos.
 
 ## 2. Tecnologías utilizadas
 
-- PHP: desarrollo de la lógica de la aplicación.
-- MySQL: almacenamiento de usuarios y contactos.
-- HTML: estructura de las páginas.
-- CSS: diseño y presentación visual.
-- XAMPP: entorno de servidor local.
-- Visual Studio Code: editor de código.
+- PHP
+- MySQL
+- HTML
+- CSS
+- XAMPP
+- InfinityFree
+- GitHub
 
-## 3. Requisitos para su ejecución
-
-- Computadora con Windows.
-- XAMPP instalado.
-- Apache y MySQL activos.
-- Navegador web.
-- Visual Studio Code (opcional, para modificar el código).
-
-## 4. Pasos para instalar la aplicación
-
-1. Instalar XAMPP en la computadora.
-2. Iniciar los servicios Apache y MySQL desde el panel de control de XAMPP.
-3. Copiar la carpeta `agenda_contactos` dentro de la carpeta `htdocs` de XAMPP.
-4. Abrir phpMyAdmin desde `http://localhost/phpmyadmin`.
-5. Crear la base de datos llamada `agenda_contactos`.
-6. Importar el archivo `database.sql` para crear las tablas necesarias.
-7. Revisar el archivo `config/conexion.php` y configurar los datos de conexión a MySQL según el entorno.
-8. Abrir el navegador y acceder a `http://localhost/agenda_contactos/registro.php`.
-9. Registrar un usuario e iniciar sesión para utilizar la aplicación.
-
-## 5. Funcionalidades principales
+## 3. Funcionalidades principales
 
 - Registro de usuarios.
 - Inicio y cierre de sesión.
-- Agregar contactos.
-- Visualizar contactos.
-- Editar contactos.
-- Eliminar contactos.
-- Separación de contactos por usuario.
-- Protección de contraseñas mediante hash.
-- Consultas preparadas y validación de solicitudes CSRF en las operaciones de contactos.
+- Agregar nuevos contactos.
+- Editar y eliminar contactos.
+- Buscar contactos por nombre, correo electrónico o ciudad.
+- Ordenar contactos por nombre, ciudad y fecha de creación.
+- Clasificar contactos por categorías: Familia, Amigos, Trabajo, Universidad y Otro.
+- Marcar contactos como favoritos.
+- Filtrar los contactos favoritos.
+- Protección de acceso mediante sesiones de usuario.
 
-## 6. Autor
+## 4. Requisitos para ejecutar el proyecto
 
-Proyecto académico desarrollado como práctica de PHP, MySQL, autenticación y gestión de información.
+- Tener instalado XAMPP.
+- Contar con PHP y MySQL.
+- Tener un navegador web.
+- Importar el archivo de base de datos `database.sql`.
+
+## 5. Pasos para instalar el proyecto
+
+1. Descargar o clonar el repositorio.
+2. Copiar la carpeta del proyecto dentro de `htdocs` de XAMPP.
+3. Iniciar Apache y MySQL desde XAMPP.
+4. Abrir phpMyAdmin.
+5. Crear o importar la base de datos utilizando el archivo `database.sql`.
+6. Configurar la conexión a la base de datos en `config/conexion.php`.
+7. Abrir el navegador y acceder a:
+
+`http://localhost/agenda_personal/login.php`
+
+## 6. Aplicación publicada en Internet
+
+La aplicación también se encuentra alojada en InfinityFree y puede accederse mediante el siguiente enlace:
+
+http://miagendacontact.free.je/agenda_personal/login.php
+
+## 7. Mejoras implementadas
+
+Se incorporaron nuevas funcionalidades para mejorar la organización y administración de los contactos, como búsqueda, ordenamiento, categorías y favoritos.
+
+También se mejoró el diseño visual mediante CSS y se publicó la aplicación en un servicio de hosting gratuito.
+
+## 8. Base de datos
+
+El proyecto utiliza una base de datos MySQL con las tablas:
+
+- `usuarios`
+- `contactos`
+
+La información de cada usuario se administra de forma independiente.
+
+## 9. Autor
+
+Proyecto académico desarrollado como parte de la asignatura de desarrollo web.
